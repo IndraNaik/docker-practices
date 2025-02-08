@@ -1,5 +1,7 @@
 # 🐳 Dockerfiles for Beginners
-
+<div align="center">
+    <img src="./Images/DockerAWS.webp" alt="Docker/>
+</div>
 This folder contains **basic Dockerfiles** for beginners to get started with **containerizing applications**.
 
 ---

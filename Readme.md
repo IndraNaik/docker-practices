@@ -24,6 +24,13 @@ Docker is a computer program that performs **operating-system-level virtualizati
 ✅ **Portable**: Runs anywhere with Docker installed.  
 ✅ Avoids compatibility issues (**"Works on my machine!"** problem).  
 
+### Docker Service
+Docker service is the utility we use when we run any docker commands
+### Docker Daemon
+Docker daemon is listens the REST API requests and performs the operation. It process running on the background.
+### Docker Daemon Socket
+The Docker daemon socket (/var/run/docker.sock) provides administrative control over the Docker engine. Exposing it to containers or external networks can be disastrous.
+
 ---
 ## 2️⃣ Dockerfile vs Docker Image vs Docker Container  
 | Feature          | Dockerfile | Docker Image | Docker Container |
