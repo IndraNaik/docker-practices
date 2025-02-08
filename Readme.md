@@ -25,8 +25,18 @@ Docker is a computer program that performs **operating-system-level virtualizati
 ✅ Avoids compatibility issues (**"Works on my machine!"** problem).  
 
 ---
+## 2️⃣ Dockerfile vs Docker Image vs Docker Container  
+| Feature          | Dockerfile | Docker Image | Docker Container |
+|-----------------|------------|--------------|------------------|
+| Definition      | A script containing instructions to build a Docker image. | A snapshot of an application and its dependencies. | A running instance of a Docker image. |
+| Purpose        | Defines the environment and dependencies. | Used to create containers. | Runs the application in an isolated environment. |
+| State         | Text file | Static (read-only) | Dynamic (running process) |
+| Persistence  | Exists as a file | Stored in a registry | Temporary or persistent (depending on setup) |
+| Example       | `Dockerfile` | `ubuntu:latest` | Running instance of `ubuntu:latest` |
 
-## 2️⃣ How Does Docker Work?  
+---
+
+## 3️⃣ How Does Docker Work?  
 Docker follows a **client-server architecture**:  
 
 🔹 **Docker CLI** → User interacts using `docker` commands.  
@@ -36,7 +46,7 @@ Docker follows a **client-server architecture**:
 
 ---
 
-## 3️⃣ Installing Docker  
+## 4️⃣ Installing Docker  
 ### 🔹 Requirements  
 ✔ Windows 10/11, macOS, or Linux.  
 ✔ Enable **Virtualization in BIOS** (for Windows).  
@@ -56,7 +66,7 @@ docker --version
 
 ---
 
-## 4️⃣ Essential Docker Commands  
+## 5️⃣ Essential Docker Commands  
 ```bash  
 docker pull <image_name>   # Pulls the image from DockerHub
 docker run hello-world     # Run a test container  
