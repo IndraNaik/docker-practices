@@ -2,6 +2,7 @@
 FROM openjdk:17-jdk-slim
 WORKDIR /app
 COPY target/*.jar app.jar
+EXPOSE 8000
 CMD ["java", "-jar", "app.jar"] 
 
 #######################################
@@ -21,5 +22,6 @@ FROM node:18
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
+EXPOSE 8001
 COPY . .
 CMD ["node", "server.js"]
